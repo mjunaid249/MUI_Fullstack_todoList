@@ -5,7 +5,7 @@ import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
-import { Container, IconButton } from "@mui/material";
+import { Container, IconButton, Typography } from "@mui/material";
 import DeleteRoundedIcon from "@mui/icons-material/DeleteRounded";
 import axios from "axios";
 import { toast } from "react-toastify";
@@ -36,10 +36,19 @@ export default function TodoTable() {
         <Table aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell>No.</TableCell>
-              <TableCell align="center">Todo</TableCell>
-              <TableCell align="center">Date & Time</TableCell>
-              <TableCell align="center">Actions</TableCell>
+              <TableCell>
+                <Typography fontWeight={600}>No.</Typography>
+              </TableCell>
+              <TableCell align="center">
+                {" "}
+                <Typography fontWeight={600}>Todo</Typography>
+              </TableCell>
+              <TableCell align="center">
+                <Typography fontWeight={600}>Date & Time</Typography>
+              </TableCell>
+              <TableCell align="center">
+                <Typography fontWeight={600}>Actions</Typography>
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>

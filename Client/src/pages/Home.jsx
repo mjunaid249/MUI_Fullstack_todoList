@@ -45,6 +45,7 @@ export default function BasicStack() {
             onChange={(e) => setTask(e.target.value)}
             sx={{ width: "50%" }}
             variant="outlined"
+            autoFocus
           />
           <Button variant="contained" sx={{ width: "50%" }} type="submit">
             Add Todo

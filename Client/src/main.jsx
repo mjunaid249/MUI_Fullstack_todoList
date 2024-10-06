@@ -17,6 +17,7 @@ const theme = createTheme({
 });
 
 import { ToastContainer } from "react-toastify";
+import * as React from "react";
 
 createRoot(document.getElementById("root")).render(
   <ThemeProvider theme={theme}>
